@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoja de Cotización</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Parte superior */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color: black;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        /* Tabla lateral en la parte superior */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Parte inferior */
+        .footer {
+            padding: 20px;
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        /* Tabla en la parte inferior */
+        .bottom-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .bottom-table th, .bottom-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .bottom-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Parte superior -->
+    <div class="header">
+        <!-- Columna izquierda -->
+        <div class="left-column">
+            <h2>Columna Izquierda</h2>
+            <table>
+                <tr>
+                    <th>Head1</th>
+                    <td>Item 1</td> 
+                </tr>
+                <tr>
+                    <th>Head2</th>
+                    <td>Item 4</td> 
+                </tr>
+                <tr>
+                    <th>Head3</th>
+                    <td>Item 7</td> 
+                </tr>
+            </table>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="right-column">
+            <h2>Columna Derecha</h2>
+            <table>
+                <tr>
+                    <th>Head1</th>
+                    <td>Item 1</td> 
+                </tr>
+                <tr>
+                    <th>Head2</th>
+                    <td>Item 4</td> 
+                </tr>
+                <tr>
+                    <th>Head3</th>
+                    <td>Item 7</td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Parte inferior -->
+    <div class="footer">
+        <h2>Tabla en la Parte Inferior</h2>
+        <table class="bottom-table">
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+            </tr>
+            <tr>
+                <td>Producto X</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Producto Y</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
